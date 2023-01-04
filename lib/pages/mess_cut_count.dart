@@ -6,11 +6,15 @@ class MessCutCount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-    children:[ Container(
-      color: Colors.blue,
-      height: 500,
-      width: 500,
-    ),
+    children:const [
+      Center(
+        child: Placeholder(
+          color: Colors.amber,
+          fallbackWidth: 100,
+          fallbackHeight: 100,
+          // strokeWidth: 20,
+        ),
+      ),
 
    ] );
   }

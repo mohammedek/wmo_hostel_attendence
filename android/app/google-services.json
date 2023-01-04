@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "275339610089",
+    "project_id": "wmo-hostel-attendence-1ab80",
+    "storage_bucket": "wmo-hostel-attendence-1ab80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275339610089:android:03129ea91dfd4c2e102d78",
+        "android_client_info": {
+          "package_name": "com.example.wmo_hostel_attendence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275339610089-9m9i98v467bsvmjbbg4ua721gbddkdql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0lveVW8AROm0UmIIQaqKbpimRmICh4a8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275339610089-9m9i98v467bsvmjbbg4ua721gbddkdql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

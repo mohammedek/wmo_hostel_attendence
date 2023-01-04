@@ -41,9 +41,11 @@ class _HistoryViewState extends State<HistoryView> {
                         // buttonWidth: 20,
                         // buttonHeight: 8.0,
                     onPress: (){
+                          Navigator.push(context,
+                               MaterialPageRoute(builder: (context)=>MessCutCount()));
                           log("Mess cut count");
-                          const MessCutCount();
-                        }
+                        }, buttonWidth: 200,
+                     buttonHeight:100,
                    ),
                  ),
                 Padding(
@@ -52,18 +54,21 @@ class _HistoryViewState extends State<HistoryView> {
                     buttonText: "Present Day",
                     // buttonTextColor: Colors.white70,
                     buttonColor: Colors.red,
+                    buttonHeight:100,
                     // buttonWidth: 20,
                     // buttonHeight: 8.0,
                     onPress: (){
                       log("clicked present day");
                       const MessCutCount();
                       },
-                      buttonTextColor: Colors.white70,),
+                      buttonTextColor: Colors.white70,
+                    buttonWidth: 200,),
                     ),
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: DupButtons(
                     buttonText: "History",
+                    buttonHeight:100,
                     // buttonTextColor: Colors.white70,
                     buttonColor: Colors.purpleAccent,
                     // buttonWidth: 20,
@@ -72,7 +77,8 @@ class _HistoryViewState extends State<HistoryView> {
                       log("History");
                       const MessCutCount();
                       },
-                    buttonTextColor: Colors.white70,),
+                    buttonTextColor: Colors.white70,
+                    buttonWidth: 200,),
                 ),
       ],
           )));
