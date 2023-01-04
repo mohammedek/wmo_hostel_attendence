@@ -1,6 +1,6 @@
 # wmo_hostel_attendence
 
-a flutter application for wmo hpstel
+a flutter application for wmo hostel
 
 ## Getting Started
 
