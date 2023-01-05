@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:wmo_hostel_attendence/constant/get_image_on_time.dart';
 import 'package:wmo_hostel_attendence/widgets/details_tile.dart';
@@ -10,7 +11,9 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.exit_to_app_outlined,color: Colors.red,))
+          IconButton(onPressed: (){
+            FirebaseAuth.instance.signOut();
+          }, icon: Icon(Icons.exit_to_app_outlined,color: Colors.red,))
         ],
         // leading: IconButton(onPressed: () {
         //     FirebaseAuth.instance.signOut();
