@@ -11,8 +11,10 @@ class Register extends StatelessWidget {
     return  SingleChildScrollView(
       child: Row(
         children: [
-          TextField(
-
+          Container(
+            height: 300,
+            width: 200,
+            color: Colors.green,
           )
         ],
       ),

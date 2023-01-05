@@ -17,8 +17,8 @@ class _HistoryViewState extends State<HistoryView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("History"),
-        backgroundColor: Color.fromARGB(255, 17, 176, 150),
+        title: const Text("History"),
+        backgroundColor: const Color.fromARGB(255, 17, 176, 150),
       ),
       body:
           SingleChildScrollView(
@@ -27,12 +27,12 @@ class _HistoryViewState extends State<HistoryView> {
          Column(
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children:  [
+              children:  const [
                 SizedBox(
                   height: 85,
                 ),
                  Padding(
-                   padding: const EdgeInsets.all(20),
+                   padding: EdgeInsets.all(20),
                    child: DupButtons(
                         buttonText: "Mess Cut Count",
                         buttonTextColor: Colors.black,
@@ -40,16 +40,17 @@ class _HistoryViewState extends State<HistoryView> {
                         buttonColor: Colors.blue,
                         // buttonWidth: 20,
                         // buttonHeight: 8.0,
-                    onPress: (){
-                          Navigator.push(context,
-                               MaterialPageRoute(builder: (context)=>MessCutCount()));
-                          log("Mess cut count");
-                        }, buttonWidth: 200,
+                    // onPress: (){
+                    //       Navigator.push(context,
+                    //            MaterialPageRoute(builder: (context)=>MessCutCount()));
+                    //       log("Mess cut count");
+                    //     },
+  buttonWidth: 200,
                      buttonHeight:100,
                    ),
                  ),
                 Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20),
                   child: DupButtons(
                     buttonText: "Present Day",
                     // buttonTextColor: Colors.white70,
@@ -57,15 +58,15 @@ class _HistoryViewState extends State<HistoryView> {
                     buttonHeight:100,
                     // buttonWidth: 20,
                     // buttonHeight: 8.0,
-                    onPress: (){
-                      log("clicked present day");
-                      const MessCutCount();
-                      },
+                    // onPress: (){
+                    //   log("clicked present day");
+                    //   const MessCutCount();
+                    //   },
                       buttonTextColor: Colors.white70,
                     buttonWidth: 200,),
                     ),
                 Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20),
                   child: DupButtons(
                     buttonText: "History",
                     buttonHeight:100,
@@ -73,10 +74,10 @@ class _HistoryViewState extends State<HistoryView> {
                     buttonColor: Colors.purpleAccent,
                     // buttonWidth: 20,
                     // buttonHeight: 8.0,
-                    onPress: (){
-                      log("History");
-                      const MessCutCount();
-                      },
+                    // onPress: (){
+                    //   log("History");
+                    //   const MessCutCount();
+                    //   },
                     buttonTextColor: Colors.white70,
                     buttonWidth: 200,),
                 ),

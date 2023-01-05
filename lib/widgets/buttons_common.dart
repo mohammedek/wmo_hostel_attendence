@@ -1,16 +1,14 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
-
-
 class DupButtons extends StatelessWidget {
-  final VoidCallback? onPress;
+  // final  dynamic onPress;
   final String buttonText;
   final Color buttonColor;
   final Color buttonTextColor;
   final double buttonWidth;
   final double buttonHeight;
+  final dynamic ? onPress;
   // final double buttonWidth;
   // final double buttonHeight;
   // final BorderRadius button_border;
@@ -18,12 +16,12 @@ class DupButtons extends StatelessWidget {
 
   const DupButtons({
     super.key,
-    this.onPress,
     required this.buttonText,
     required this.buttonTextColor,
     required this.buttonColor,
     required this.buttonWidth,
     required this.buttonHeight,
+    this.onPress,
   });
 
 // class DupButtons extends StatelessWidget {

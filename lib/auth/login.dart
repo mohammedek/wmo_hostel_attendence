@@ -53,13 +53,10 @@ class LoginPage extends StatelessWidget {
                         const customTextFeild(),
                         const customPasswordFeild(),
                         const SizedBox(height: 30.0,),
-                         Padding(
+                         const Padding(
                             padding: EdgeInsets.all(10.0),
                             child: (
                             DupButtons(
-                              onPress:(){
-                                print("sclkwlkfh");
-                              },
                                   buttonText: "Submit",
                                   buttonTextColor: Colors.blue,
                                   buttonColor: Colors.blue,
