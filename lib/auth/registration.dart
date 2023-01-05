@@ -16,7 +16,7 @@ class Register extends StatelessWidget {
           )
         ],
       ),
-    )
+    );
 
   }
 }

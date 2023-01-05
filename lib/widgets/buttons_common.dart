@@ -24,8 +24,6 @@ class DupButtons extends StatelessWidget {
     required this.buttonColor,
     required this.buttonWidth,
     required this.buttonHeight,
-    // required this.buttonWidth,
-    // required this.buttonHeight
   });
 
 // class DupButtons extends StatelessWidget {
@@ -41,7 +39,7 @@ class DupButtons extends StatelessWidget {
     return  Container(
         decoration: BoxDecoration(
           color: buttonColor,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(15),
         ),
         height: buttonHeight,
         width: buttonWidth ,
@@ -49,7 +47,7 @@ class DupButtons extends StatelessWidget {
         style: ElevatedButton.styleFrom(backgroundColor: buttonColor),
           onPressed: onPress,
             child: Center(
-                child: Text(buttonText,style: TextStyle(
+                child: Text(buttonText,style: const TextStyle(
                     fontSize:30,
                     fontWeight: FontWeight.bold,
                     color: Colors.black54),)),
